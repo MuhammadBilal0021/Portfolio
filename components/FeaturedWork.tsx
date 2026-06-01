@@ -9,7 +9,7 @@ export default function FeaturedWork() {
         <h2>Selected Work</h2>
         <ul style={{ marginTop: "24px" }}>
           {projects.map((project) => (
-            <li key={project.slug} style={{ marginBottom: "20px", display: "flex", flexDirection: "column", gap: "4px" }}>
+            <li key={project.slug} style={{ marginBottom: "20px", display: "flex", flexDirection: "column", gap: "4px", alignItems: "flex-start" }}>
               <Link href={`/projects/${project.slug}`} style={{ fontWeight: 500, fontSize: "16px" }}>
                 {project.title} ↗
               </Link>

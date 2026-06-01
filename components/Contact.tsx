@@ -18,11 +18,11 @@ export default function Contact() {
     <section id="contact" className="section" style={{ paddingBottom: "120px" }}>
       <ScrollReveal>
         <hr className="divider" />
-        <div className="flex-row">
+        <div className="flex-responsive">
           <a href="mailto:muhammadbilals.se@gmail.com" className="flex-row" style={{ gap: "8px" }}>
             <Mail size={16} /> email
           </a>
-          <span style={{ color: "var(--text-muted)" }}>/</span>
+          <span className="hide-on-mobile" style={{ color: "var(--text-muted)" }}>/</span>
           <a
             href="https://github.com/MuhammadBilal0021"
             target="_blank"
@@ -31,7 +31,7 @@ export default function Contact() {
           >
             <GithubIcon size={16} /> github
           </a>
-          <span style={{ color: "var(--text-muted)" }}>/</span>
+          <span className="hide-on-mobile" style={{ color: "var(--text-muted)" }}>/</span>
           <a
             href="https://www.linkedin.com/in/muhammad-bilal0021/"
             target="_blank"
